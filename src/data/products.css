@@ -1,0 +1,131 @@
+/* Phong cách chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Màu nền */
+  }
+  
+  /* Khung chứa sản phẩm */
+  .product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Nền trắng */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  }
+  .product-image-large {
+    width: 100%;
+    max-width: 600px; /* Giới hạn kích thước tối đa */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px; /* Góc bo tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  }
+  
+  /* Tiêu đề sản phẩm */
+  .product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Màu chữ đậm */
+  }
+  
+  /* Bộ sưu tập hình ảnh */
+  .product-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .product-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Hiệu ứng phóng to */
+  }
+  
+  .product-images img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Phần thông tin chi tiết */
+  .product-details {
+    margin-bottom: 20px;
+  }
+  
+  .product-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555; /* Màu chữ nhạt hơn */
+  }
+  
+  .product-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #444; /* Màu chữ trung bình */
+  }
+  
+  .product-details ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Khuyến mãi */
+  .promotions {
+    background-color: #f0f8ff; /* Màu nền xanh nhạt */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007bff; /* Màu chữ xanh dương */
+  }
+  
+  /* Thông số kỹ thuật */
+  .specs-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .spec-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333; /* Màu chữ */
+  }
+  
+  .spec-item svg {
+    font-size: 20px;
+    color: #007bff; /* Màu biểu tượng */
+  }
+  
+  /* Trả góp */
+  .installment {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745; /* Màu xanh lá */
+  }
+  
+  /* Giá */
+  .price-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d9534f; /* Màu đỏ */
+    margin-bottom: 20px;
+  }
+  
+  /* Giao diện phản hồi (Responsive) */
+  @media (max-width: 768px) {
+    .product-images {
+      flex-direction: column;
+    }
+  
+    .specs-container {
+      flex-direction: column;
+    }
+  }
+  

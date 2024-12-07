@@ -1,0 +1,31 @@
+/* AuthForms.css */
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h3,
+.register-form h3 {
+  margin-bottom: 20px;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.auth-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-submit:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,78 @@
+.footer {
+    background-color: #000;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    display: flex; 
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu không đủ chỗ */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các mục */
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  .footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Các mục trong danh sách nằm ngang */
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các mục */
+  }
+  
+  .footer ul li {
+    margin: 0; /* Xóa khoảng cách dọc */
+  }
+  
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    display: flex; /* Các liên kết nằm ngang */
+    gap: 10px; /* Tạo khoảng cách giữa các liên kết */
+    color: #fff;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #666;
+    display: flex; /* Căn nằm ngang */
+    justify-content: space-between; /* Khoảng cách đều giữa các phần trong footer-bottom */
+    flex-wrap: wrap; /* Cho phép các phần xuống dòng nếu không đủ chỗ */
+  }
+  
+  .footer-bottom a {
+    color: #007bff;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  

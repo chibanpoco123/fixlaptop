@@ -1,0 +1,117 @@
+/* Container bao quanh form đăng nhập và đăng ký */
+.auth-container {
+    perspective: 1000px; /* Thêm perspective để tạo hiệu ứng chiều sâu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .form-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; /* Giúp giữ cả hai mặt khi xoay */
+  }
+  
+  /* Thêm lớp flip để thực hiện xoay */
+  .auth-container.flip .form-wrapper {
+    transform: rotateY(180deg);
+  }
+  
+  .form-container {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; /* Đảm bảo khi xoay, một mặt sẽ ẩn */
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container {
+    transform: rotateY(0deg); /* Không xoay form đăng nhập */
+  }
+  
+  .signup-container {
+    transform: rotateY(180deg); /* Xoay 180 độ form đăng ký để phía sau */
+  }
+  
+  /* Định dạng form */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-text {
+    margin-top: 20px;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .toggle-text:hover {
+    text-decoration: underline;
+  }
+  
+  .form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Cải thiện cho phiên bản mobile */
+  @media (max-width: 480px) {
+    .form-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .form input {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .form button {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .toggle-text {
+      font-size: 12px;
+    }
+  }
+  

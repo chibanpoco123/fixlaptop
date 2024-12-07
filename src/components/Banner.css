@@ -1,0 +1,116 @@
+.banner-container {
+    position: relative;
+    width: 98%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+  }
+  
+  .banner-slide {
+    height: 300px;
+    width: 100%;
+   
+  }
+  
+  .slide-content {
+    height: 90%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+  }
+   
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px;
+  }
+  
+  /* Custom styling for slider dots */
+  .slick-dots {
+    bottom: 25px;
+  }
+  
+  .slick-dots li button:before {
+    color: white;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+  }
+  
+  
+  .countdown {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+
+    
+  }
+  
+  .timer {
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .timer span {
+    background: rgba(255,255,255,0.1);
+    padding: 5px 5px;
+    border-radius: 4px;
+  }
+  .time1 {
+    margin-top: -5px;
+  }
+
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .slide-text h2 {
+      font-size: 2rem;
+    }
+  
+    .slide-text p {
+      font-size: 1.2rem;
+    }
+  
+    .slide-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }

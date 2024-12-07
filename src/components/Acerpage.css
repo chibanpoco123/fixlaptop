@@ -1,0 +1,148 @@
+.K1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Màu xám nền */
+    color: #fff; /* Màu chữ trắng */
+    padding: 10px 20px;
+  }
+  
+  .top-bar-left span {
+    margin-right: 20px;
+  }
+  
+  .top-bar-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .top-bar-right a:hover {
+    text-decoration: underline;
+  }
+  .K2-left span{
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  .K2 h1{
+  }
+  .bi-heart-fill{
+    align-items: center;
+    margin-left: 52%;
+  }
+  .K2-right  {
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .K3{
+    display:  flex;
+    font-size: 30px;
+    justify-content: space-between;
+  }
+  .bi-search{
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .logo-image{
+    margin-top: 30px;
+    width: 100%;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    margin-top: 50px;
+  }
+  
+  .product-card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .product-card h3 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  .product-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .product-button button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .product-button button:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-button button:first-child {
+    background-color: #4CAF50; /* Màu nền nút Thêm vào giỏ hàng */
+    color: white;
+  }
+  
+  .product-button button:first-child:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+  }
+  
+  .product-button button:last-child {
+    background-color: #008CBA; /* Màu nền nút Mua hàng */
+    color: white;
+  }
+  
+  .product-button button:last-child:hover {
+    background-color: #007bb5; /* Màu nền khi hover */
+  }
+  .bi-cart2{
+    cursor: pointer;
+  }
+ .product-image{
+  cursor: pointer;
+ }
+ .product-card{
+  cursor: pointer;
+ }
+ .category-filter{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ }
+ h1{
+
+ }
+ .search-bar{
+  margin-left: 20px;
+ }

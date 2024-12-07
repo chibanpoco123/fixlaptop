@@ -1,0 +1,44 @@
+.laptop-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .laptop-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .laptop-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .laptop-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  
+  .price {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+  
+  .new-price {
+    color: #e53935;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+  
